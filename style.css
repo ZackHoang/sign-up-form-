@@ -1,8 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #00d4ea;
-    height: 100%; 
-    margin: 0; 
-    display: flex;
 }
 
 .img-vancouver {
@@ -12,6 +15,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: center;
+    border: 1px solid black;
+    flex: .5;
 }
 
 .img-text {
@@ -23,11 +28,8 @@ body {
 }
 
 .container {
-    height: 100vh; 
-    width: 130vh; 
+    height: 100vh;  
     display: flex;
-    flex-direction: row; 
-    gap: 100px; 
 }
 
 .text {
@@ -35,23 +37,33 @@ body {
     flex-direction: column;
     font-family: Arial Narrow;    
     font-weight: bold;
-    font-size: 30px;   
-    margin-top: 50px;
-    gap: 20px; 
+    font-size: 30px;
+    flex: 1;
+    border: 1px solid red;
+    gap: 50px; 
+    margin-left: 50px;
 }
 
 fieldset {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    gap: 100px; 
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .form_container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-p {
-    display: inline-flex;
+.inputs {
+    display: flex;
     flex-direction: column;
+}
+
+label {
+    font-size: 15px;
 }
